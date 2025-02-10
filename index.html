@@ -5,14 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-        h1 { color: #333; }
-        p { font-size: 18px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1f1c2c, #928DAB);
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 320px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #ffdd57;
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <h1>Hi, I'm Kislay</h1>
-    <p>I'm a engineer passionate about backend development, and optimizing systems.</p>
-    <p>Connect with me on <a href="https://www.linkedin.com/">LinkedIn</a>.</p>
+    <div class="container">
+        <img src="https://res.cloudinary.com/dwkccemnr/image/upload/f_webp/v1739174257/IMG_0955_uij6so.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Hi, I'm Kislay</h1>
+        <p>I'm an engineer passionate about backend development and optimizing systems.</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/kr-kislay/">LinkedIn</a>.</p>
+    </div>
 </body>
 </html>
